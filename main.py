@@ -162,7 +162,7 @@ class Calculator(tk.Tk):
         # Binding the key and return event handler to handle keyboard key presses.
         self.widgets["output_current_entry"].bind("<Key>", self.key_click)
         self.widgets["output_current_entry"].bind(
-            "Return", self.return_click())
+            "<Return>", self.return_click())
 
         # ScrolledText used to output calculation history.
         self.widgets["output_history"] = st.ScrolledText(
